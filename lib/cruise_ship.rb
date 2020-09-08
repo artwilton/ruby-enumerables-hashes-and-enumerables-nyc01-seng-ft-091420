@@ -7,8 +7,11 @@
 # }
 
 def select_winner(passengers)
+  winner = ""
   passengers.each do |room, name|
-    passengers[suite_a:][name][0] == "A"
+    if room == :suite_a and name[0] == "A"
+      p name
+    end
   end
   # add the code snippet here!
 end
